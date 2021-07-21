@@ -3,6 +3,18 @@
 ## Propósito do projeto
 
 O projeto foi criado para raspar imagens do Google, utilizando a biblioteca `images-scraper`, que faz uso do Puppeteer por de baixo dos panos. A motivação para criá-lo foi outro projeto que estou desenvolvendo, que me deu a ideia de automatizar a busca pelas imagens por meio de um micro serviço gratuito.
+<br/>
+<br/>
+
+<hr/>
+
+# Rotas
+
+- Para buscar imagens: `/image/:query/:quantity?`
+
+O parâmetro `query` é o que será buscado no Google Images.
+
+O parâmetro `quantity` é opcional. Se não for passado, por padrão a API retornará apenas 1 resultado.
 
 ## Requerimentos
 
