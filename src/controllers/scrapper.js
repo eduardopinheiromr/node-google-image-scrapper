@@ -12,11 +12,17 @@ const getImages = async (query, quantity) => {
 };
 
 const getImagesHandler = async (req, res) => {
-  const query = req.params.food;
-  const quantity = 1;
+  const query = req.params.query;
+  const quantity = req.params.quantity ?? 1;
 
   const results = await getImages(query, quantity);
-  res.send(results);
+
+  const response = {
+    query,
+    quantity,
+    results,
+  };
+  res.send(response);
 };
 
 module.exports = getImagesHandler;
