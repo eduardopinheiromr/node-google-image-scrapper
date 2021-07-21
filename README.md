@@ -1,6 +1,6 @@
-# Node Google Image Scrapper API
+# **Node Google Image Scrapper API**
 
-## Propósito do projeto
+## **Propósito do projeto**
 
 O projeto foi criado para raspar imagens do Google, utilizando a biblioteca `images-scraper`, que faz uso do Puppeteer por de baixo dos panos. A motivação para criá-lo foi outro projeto que estou desenvolvendo, que me deu a ideia de automatizar a busca pelas imagens por meio de um micro serviço gratuito.
 <br/>
@@ -8,9 +8,9 @@ O projeto foi criado para raspar imagens do Google, utilizando a biblioteca `ima
 
 <hr/>
 
-# Rotas
+# **Rotas**
 
-- Para buscar imagens: `/image/:query/:quantity?`
+**Para buscar imagens: _`/image/:query/:quantity?`_**
 
 O parâmetro `query` é o que será buscado no Google Images.
 
