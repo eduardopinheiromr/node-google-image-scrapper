@@ -1,6 +1,5 @@
-const getImages = async (query, quantity) => {
-  const results = await google.scrape(query, quantity);
-  return results;
-};
+const getImages = require("./getImages");
 
-export { getImages };
+module.exports = {
+  getImages,
+};

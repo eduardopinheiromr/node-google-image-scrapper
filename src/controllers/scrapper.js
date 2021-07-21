@@ -1,11 +1,4 @@
-const { getImages } = require("@utils/");
-var Scraper = require("images-scraper");
-
-const google = new Scraper({
-  puppeteer: {
-    headless: true,
-  },
-});
+const { getImages } = require("../utils");
 
 const getImagesHandler = async (req, res) => {
   const query = req.params.query;
