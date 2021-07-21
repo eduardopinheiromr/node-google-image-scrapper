@@ -1,3 +1,4 @@
+const { getImages } = require("@utils/");
 var Scraper = require("images-scraper");
 
 const google = new Scraper({
@@ -5,11 +6,6 @@ const google = new Scraper({
     headless: true,
   },
 });
-
-const getImages = async (query, quantity) => {
-  const results = await google.scrape(query, quantity);
-  return results;
-};
 
 const getImagesHandler = async (req, res) => {
   const query = req.params.query;
